@@ -1,14 +1,14 @@
 {
   "name": "mapbox-gl-compare",
   "version": "0.4.1",
-  "description": "Swipe and sync between two maps",
+  "description": "Swipe and sync between two maps - rotatable swiper",
   "main": "index.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
     "start": "cp style.css example/style.css && budo example/index.js --serve example/bundle.js --dir example --live",
-    "build": "cp style.css dist/mapbox-gl-compare.css && NODE_ENV=production && browserify index.js | uglifyjs -c -m > dist/mapbox-gl-compare.js",
+    "build": "cp style.css dist/mapbox-gl-compare-rotate.css && NODE_ENV=production && browserify index.js | uglifyjs -c -m > dist/mapbox-gl-compare-rotate.js",
     "test": "npm run lint && browserify -t envify test/index.js | smokestack -b firefox | tap-status",
     "lint": "eslint --no-eslintrc -c .eslintrc index.js",
     "docs": "documentation build index.js --format=md > API.md"

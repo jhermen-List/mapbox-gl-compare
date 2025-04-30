@@ -4,7 +4,7 @@ const test = require('tape');
 window.mapboxgl = require('mapbox-gl');
 require('../');
 
-mapboxgl.accessToken = process.env.MapboxAccessToken;
+mapboxgl.accessToken = "pk.eyJ1IjoiZGtkbGFiIiwiYSI6ImNsZWdwenZtNTA4d200NHFybjF3aXRiamUifQ.duaxu2P4FSRXI7ZjOdSN-A";
 
 // Tests
 test('Compare', function(t) {
